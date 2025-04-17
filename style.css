@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* CSS RESET  */
+
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+body {
+  /* 4. Add accessible line-height */
+  line-height: 1.5;
+  /* 5. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+
+  /* My rules */
+  /* font-family: "Roboto", sans-serif; */
+
+}
+/* 6. Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+/* 7. Inherit fonts for form controls */
+input, button, textarea, select {
+  font: inherit;
+}
+/* 8. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+/* 9. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+/*
+  10. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+/* END - CSS RESET  */
+
+/* General / Group  */
+.container-for-alignment{
+  width: 80%;
+  margin: auto;
+}
+
+.hero-section, footer {
+  background-color: #1F2937;
+}
+
+button {
+  background-color: #3882F6;
+  color: #E5E7EB; 
+  padding: 2px 20px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* END - General / Group  */
+
+/* Hero section  */
+
+header{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  margin-bottom: 60px;
+}
+
+header ul{
+  display: flex;
+  list-style-type: none;  
+  gap: 25px;
+}
+
+a {
+  color: #E5E7EB;
+  text-decoration: none;
+}
+
+.logo{
+  color: #F9FAF8;
+  font-size: 24px;
+}
+
+.hero-body{
+  padding-bottom: 60px;
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+
+.hero-body .content{
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+.hero-body .hero-picture{
+  grid-column-start: 4;
+  grid-column-end: 7;
+  justify-self: end;
+}
+
+.hero-title{
+  font-weight: 900;
+  color: #F9FAF8;
+  font-size: 48px;
+}
+
+.hero-section .secondary-text {
+  color: #E5E7EB;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.hero-section button{
+  border: none;
+  border-radius: 6px;
+}
+/* END - Hero section  */
+
+/* Info section  */
+.info-section .title{
+  color: #1F2937;
+  font-weight: 900;
+  font-size: 36px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.cards{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding-bottom: 50px;
+  padding-top: 20px;
+}
+
+.card-item {
+  width: 100px;
+  text-align: center;
+}
+
+.card-item > .empty-box{
+  border: 3px solid #3882F6;
+  width: 100px;
+  height: 100px;
+  
+}
+/* END - Info section  */
+
+/* Quote section  */
+.quote-section{
+  background-color: #E5E7EB;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  
+}
+.quote-section .quote{
+  font-size: 36px;
+  font-weight: lighter;
+  color: #1F2937 ;
+  text-align: center;
+}
+
+.quote-section .author{
+  font-size: 18px;
+  font-weight: bold;
+  color: #1F2937 ;
+  text-align: end;
+
+}
+/* END - Quote section  */
+
+/* Call to Action section  */
+
+.call-to-action-section{
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+.call-to-action-container{
+  background-color: #3882F6;
+  padding: 40px 80px;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.call-to-action-container .title{
+  font-weight: bold;
+  color: #E5E7EB;
+}
+
+.call-to-action-container .body{
+  font-weight: light;
+  color: #E5E7EB;
+  font-size: 18px;
+}
+
+.call-to-action-container button{
+  border: 2px solid white;
+  border-radius: 6px;
+  padding: 8px 30px;
+
+
+}
+/* END - Call to Action section  */
+
+/* Footer section  */
+footer{
+  color: #E5E7EB;
+  font-size: 18px;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+/* END - Footer section  */
+
